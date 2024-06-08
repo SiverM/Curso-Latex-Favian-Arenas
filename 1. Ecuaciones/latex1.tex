@@ -1,0 +1,25 @@
+\documentclass{article}								%tipo de documento
+\usepackage[spanish]{babel} 						%poner en español el idioma
+\usepackage{amsmath}								%usar simbolos de la libreria ams 
+\title{Mi primer documento en \LaTeX}				%titulo del preambulo
+\author{Iver Medina}								%autor del preambulo
+\begin{document}									%inicio del documento
+\maketitle											%mostrar el preambulo en el documento
+\begin{abstract}									%inicio del abstract o resumen
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla finibus ornare justo, vitae tempor dui maximus et. Praesent mattis lorem odio, in tristique ante feugiat eu. Sed ac ultrices lorem. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Cras mollis lacus id nisi porta ultricies. Praesent dapibus mattis lorem iaculis imperdiet. Etiam vitae fermentum tellus. Nunc ligula metus, scelerisque et varius eu, eleifend non turpis. Vivamus aliquet finibus aliquam. Integer lorem magna, cursus ut vestibulum nec, sollicitudin sed metus. Mauris molestie, orci at vestibulum sodales, mi tellus scelerisque est, id pretium ante lectus at turpis. Proin rutrum ante justo, semper dapibus tortor viverra ac. In malesuada diam a mi tincidunt tempus. Duis ut commodo arcu.
+$x \in A$ 
+\end{abstract}
+Ecuaciones dentro del párrafo
+\[
+A=\left\lbrace x \in R:0<[2x]<1 \right\rbrace
+\]
+\begin{equation}\label{eq1}
+A=\left\lbrace x \in R:0<[2x]<1 \right\rbrace
+\end{equation}
+como vimos en la ecuación(\ref{eq1})
+\begin{equation*}
+A=\left\lbrace x \in R:0<[2x]<1 \right\rbrace
+\end{equation*}
+$$ A=\left\lbrace x \in R:0<[2x]<1 \right\rbrace $$
+Ecuaciones dentro del párrafo, $x\in R,$ se pueden escribir fracciones, $a/b$ o en forma usual $\frac{a}{b},$ si nos parece que es muy pequeño podemos usar $\displaystyle\frac{a}{b},$ o su contracción equivalente $\dfrac{a}{b}.$
+\end{document}
