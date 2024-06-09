@@ -1,0 +1,47 @@
+\documentclass{article}
+\usepackage{graphicx}			%paquete para importar imagenes
+\usepackage{subfig}				%referenciar imagenes y ponerlas en serie
+\begin{document}
+MAYA SORAYDE
+\begin{figure}[h]		%poner la imagen en: h->donde esta el codigo;t->arriba;b->abajo
+\centering
+\includegraphics[width=0.50\linewidth]{MayaSorayde.jpg}
+\caption{Maya Sorayde}			%nombre imagen
+\label{fig:Maya}				%etiqueta de la imagen
+\end{figure}
+BOXXY
+\begin{figure}[h]		%poner la imagen en: h->donde esta el codigo;t->arriba;b->abajo
+\centering
+\includegraphics[width=3cm,height=2cm]{boxxy.png}
+\caption{Boxxy}			%nombre imagen
+\label{fig:Boxxy}				%etiqueta de la imagen
+\end{figure}
+
+\begin{figure}[h]		%poner la imagen en: h->donde esta el codigo;t->arriba;b->abajo
+\centering
+\subfloat[primera]{
+\includegraphics[width=5cm]{MayaSorayde.jpg}
+}
+\hspace{0.1\linewidth}
+\subfloat[segunda]{
+\includegraphics[width=5cm]{MayaSorayde.jpg}
+}
+%es necesario poner este espacio para que esten alineados 2 arriba y 2 abajo.
+%funciona tambien con \includegraphics[width=0.50\linewidth]{MayaSorayde.jpg}
+\subfloat[tercera]{
+\includegraphics[width=5cm]{MayaSorayde.jpg}
+}
+\hspace{0.1\linewidth}
+\subfloat[cuarta]{
+\includegraphics[width=5cm]{MayaSorayde.jpg}
+}
+\caption{Maya Sorayde}			%nombre imagen
+\label{fig:Maya}				%etiqueta de la imagen
+\end{figure}
+
+
+
+
+
+
+\end{document}
